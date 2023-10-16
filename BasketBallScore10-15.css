@@ -1,0 +1,63 @@
+body {
+    margin: 2% 5%;
+    /* Changed fixed pixel margin to percentage */
+    overflow-x: hidden;
+    /* Prevents horizontal scroll if any element goes beyond the screen width */
+}
+
+.container {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+    background-color: #023781;
+    align-items: center;
+    border: 5px solid gold;
+    border-radius: 8px;
+    gap: 2%;
+    /* Using relative unit instead of fixed pixels */
+    max-width: 1200px;
+    /* Setting a max-width can help to constrain content on very wide viewports */
+    margin: 0 auto;
+    /* Centers the container */
+}
+
+.title {
+    font-size: 2em;
+    /* Using em makes the font size relative to its inherited size */
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.winner {
+    border: 10px solid gold;
+}
+
+
+.score {
+    text-align: center;
+    color: red;
+    background-color: black;
+    border: 1px solid gold;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 40px;
+    /* Relative padding */
+    font-family: "Digital", sans-serif;
+}
+
+button {
+    border: 1px solid gold;
+    border-radius: 5px;
+    background-color: #023781;
+    color: gold;
+    padding: 0.5em 1em;
+    /* Relative padding */
+}
+
+/* Media queries for different screen sizes */
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 2%;
+    }
+}
